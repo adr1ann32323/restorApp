@@ -163,13 +163,13 @@
                     <!-- Imagen -->
                     <img
                       [src]="item.link_image"
-                      [alt]="item.name"
+                      [alt]="item.product_name"
                       class="w-16 h-16 rounded-lg object-cover"
                     />
 
                     <!-- Info -->
                     <div class="flex-1">
-                      <h3 class="font-semibold text-gray-900">{{ item.name }}</h3>
+                      <h3 class="font-semibold text-gray-900">{{ item.product_name }}</h3>
                       <p class="text-sm text-gray-500">{{ item.price | currency }}</p>
                       @if (item.notes) {
                         <p class="text-xs text-gray-400 mt-1">{{ item.notes }}</p>

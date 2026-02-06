@@ -1,0 +1,47 @@
+<div class="unauthorized-container">
+  <div class="unauthorized-content">
+    <!-- Icono de Advertencia -->
+    <div class="icon-container">
+      <svg class="warning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+      </svg>
+    </div>
+
+    <!-- Título -->
+    <h1 class="title">Acceso No Autorizado</h1>
+
+    <!-- Descripción -->
+    <p class="description">
+      Lo sentimos, no tienes permisos para acceder a esta página.
+    </p>
+
+    <div class="info-box">
+      <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <p class="info-text">
+        Esta sección está reservada para administradores. Si crees que esto es un error, contacta al administrador del sistema.
+      </p>
+    </div>
+
+    <!-- Botones de Acción -->
+    <div class="actions">
+      <button (click)="goBack()" class="btn btn-secondary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Volver al Inicio
+      </button>
+
+      <button (click)="logout()" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+        </svg>
+        Cerrar Sesión
+      </button>
+    </div>
+
+    <!-- Código de Error -->
+    <p class="error-code">Error 403 - Forbidden</p>
+  </div>
+</div>

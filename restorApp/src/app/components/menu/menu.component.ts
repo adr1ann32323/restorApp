@@ -125,7 +125,7 @@ export class MenuComponent implements OnInit {
   addToCart(product: Product): void {
     const cartItem: CartItem = {
       product_id: product.id!,
-      name: product.name,
+      product_name: product.name,
       price: product.price,
       quantity: 1,
       link_image: product.link_image
