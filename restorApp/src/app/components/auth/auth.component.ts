@@ -166,12 +166,11 @@ export class AuthComponent implements OnInit {
       this.loading.set(false);
       this.message.set('¡Inicio de sesión exitoso!');
 
-      // Redirigimos después de 1 segundo
+      // Redirigimos después de 1 segundo al menú
       setTimeout(() => {
-        // Por ahora redirigimos a la misma página, pero cuando tengas más rutas
-        // redirigirás a /products para USER o /admin/dashboard para ADMIN
         console.log('Login exitoso. Token guardado:', fakeToken);
         console.log('Usuario:', fakeUser);
+        this.router.navigate(['/menu']);
       }, 1000);
     }, 1000);
   }
@@ -201,10 +200,11 @@ export class AuthComponent implements OnInit {
       this.loading.set(false);
       this.message.set('¡Registro exitoso!');
 
-      // Redirigimos después de 1 segundo
+      // Redirigimos después de 1 segundo al menú
       setTimeout(() => {
         console.log('Registro exitoso. Token guardado:', fakeToken);
         console.log('Usuario:', fakeUser);
+        this.router.navigate(['/menu']);
       }, 1000);
     }, 1000);
   }
